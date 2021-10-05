@@ -1,20 +1,20 @@
 puts "Salut, bienvenue dans ma super pyramide ! Combien d'étage veux-tu ?"
-num_user = gets.chomp.to_i
+nb = gets.chomp.to_i
 brick = "#"
 space = " "
-puts ">#{num_user}"
+puts ">#{nb}"
 
 # Bloque le choix du nombre entre 1 et 25
-until num_user.between?(1, 25) do
+until nb.between?(1, 25) do
     puts "Il me faut un nombre entre 1 et 25 svp"
-    num_user = gets.chomp.to_i
+    nb = gets.chomp.to_i
 end
 
-space *= num_user
+space *= nb
 puts "Voici ta pyramide: "
-while num_user > 0
+while nb > 0
     puts space + brick
     space.slice! " "
     brick += "#"
-    num_user -= 1
+    nb -= 1
 end
