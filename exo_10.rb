@@ -7,5 +7,5 @@ while num_user < Time.now.year
     num_user += 1
     age += 1
     puts "#{num_user}"
-    puts "Tu avais #{age} ans"
+    puts "Tu avais #{age} an(s)"
 end

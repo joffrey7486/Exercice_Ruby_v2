@@ -9,5 +9,5 @@ while date_user < Time.now.year
     age += 1
     years -= 1
     puts "#{date_user}"
-    puts "il y a #{years} ans, tu avais #{age} ans"
+    puts "il y a #{years} ans, tu avais #{age} an(s)"
 end
