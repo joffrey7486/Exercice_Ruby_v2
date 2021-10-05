@@ -4,8 +4,8 @@ brick = "#"
 oxygen = " "
 puts ">#{num_user}"
 
-while num_user > 25 
-    puts "Il me faut un nombre inférieur a 25 svp"
+until num_user.between?(1, 25) do
+    puts "Il me faut un nombre entre 1 et 25 svp"
     num_user = gets.chomp.to_i
 end
 
