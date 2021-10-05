@@ -1,0 +1,8 @@
+puts "Donne moi un nombre !!"
+
+num_user = gets.chomp.to_i
+
+num_user.times do |i|
+     i += 1
+     puts "#{i}"
+end
